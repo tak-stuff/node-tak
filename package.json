@@ -1,0 +1,29 @@
+{
+  "name": "tak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tak-stuff/tak.git"
+  },
+  "keywords": [
+    "tak"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tak-stuff/tak/issues"
+  },
+  "homepage": "https://github.com/tak-stuff/tak#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4"
+  }
+}
