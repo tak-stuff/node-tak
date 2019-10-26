@@ -1,13 +1,13 @@
 {
   "name": "node-tak",
-  "version": "0.0.1",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.2",
+  "description": "Move verification and game state managing for Tak",
+  "main": "dist/takGame.js",
+  "types": "dist/takGame.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
+    "cover": "nyc --reporter=lcov npm run test"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,11 @@
   "keywords": [
     "tak"
   ],
-  "author": "",
-  "license": "ISC",
+  "contributors": [
+    "Niklas Eicker <hello@nikl.me> (https://www.nikl.me/)",
+    "Jennifer V. Phan <hello@jvphan.me> (https://jvphan.me/)"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tak-stuff/tak/issues"
   },
@@ -25,8 +28,11 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.7",
-    "istanbul": "^0.4.5",
     "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "ptn-file-parser": "0.0.1"
   }
 }
