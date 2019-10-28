@@ -1,6 +1,6 @@
 {
   "name": "node-tak",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Move verification and game state managing for Tak",
   "main": "dist/takGame.js",
   "types": "dist/takGame.d.ts",
