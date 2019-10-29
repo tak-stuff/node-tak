@@ -33,6 +33,6 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "ptn-file-parser": "0.0.1"
+    "ptn-file-parser": "1.0.0"
   }
 }
