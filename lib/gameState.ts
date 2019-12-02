@@ -1,5 +1,6 @@
-import PTNFileParser = require('ptn-file-parser')
-import TakBoard = require('./takBoard')
+import PTNFileParser = require('ptn-file-parser');
+import TakBoard = require('./takBoard');
+import Move = require('./move');
 
 class GameState {
   public size: number;
@@ -26,7 +27,17 @@ class GameState {
       state.result = ptnFile.tags['Result'];
     }
     // ToDo! loop through moves and place pieces
+    let moveNr = 0;
+    while(ptnFile.whiteMoves[moveNr]) {
+      state.move(Move.fromPtn(ptnFile.whiteMoves[moveNr]))
+      if(!ptnFile.blackMoves[moveNr]) break;
+      state.move(Move.fromPtn(ptnFile.blackMoves[moveNr]))
+    }
     return state;
+  }
+
+  move(move: Move) {
+    throw new Error("Method not implemented.");
   }
 }
 
