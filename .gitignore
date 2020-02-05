@@ -1,4 +1,11 @@
+# ignore transpiled package
 dist
-node_modules
+
+# ignore coverage ouput
 coverage
 .nyc_output
+
+node_modules
+
+# IDE stuff
+.idea

@@ -1,7 +1,6 @@
-"use strict";
-const expect = require("chai").expect;
-const GameState = require("../dist/gameState");
-const TakGame = require("../dist/takGame");
+import {expect} from "chai";
+import GameState from "../lib/gameState";
+import TakGame from "../lib/takGame";
 
 describe("TakGame", () => {
   it("should take the board size from the game state", () => {

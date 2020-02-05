@@ -1,14 +1,14 @@
-import GameState = require("./gameState");
+import GameState from './gameState';
 
 class TakGame {
-    private _gameState: GameState;
-    constructor(state: GameState) {
-        this._gameState = state;
-    }
+  private readonly _gameState: GameState;
+  constructor(state: GameState) {
+    this._gameState = state;
+  }
 
-    get boardSize(): number {
-        return this._gameState.size;
-    }
+  get boardSize(): number {
+    return this._gameState.size;
+  }
 }
 
-export = TakGame;
+export default TakGame;

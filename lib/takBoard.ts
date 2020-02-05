@@ -1,15 +1,11 @@
 class TakBoard {
-  private _size: number;
-  private _board: string[];
+  public readonly size: number;
+  public readonly board: string[];
 
   constructor(size: number) {
-    this._size = size;
-    this._board = new Array(size*size)
-  }
-
-  public addPiece(): void {
-    
+    this.size = size;
+    this.board = new Array(size * size);
   }
 }
 
-export = TakBoard;
+export default TakBoard;
