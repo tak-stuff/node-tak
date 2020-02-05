@@ -3,7 +3,7 @@ import TakBoard from './takBoard';
 
 class GameState {
   public size: number;
-  private readonly board: TakBoard;
+  public readonly board: TakBoard;
 
   constructor(state: object = { size: 5 }) {
     this.size = (state as any).size;

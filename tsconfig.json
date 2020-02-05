@@ -1,4 +1,6 @@
 {
+  "include": ["lib"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es2018",
     "module": "commonjs",
@@ -12,7 +14,6 @@
     "alwaysStrict": false,
     "strict": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
